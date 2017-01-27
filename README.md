@@ -20,7 +20,7 @@ Finally, install the Chart::Gnuplot perl module.  The easiest way to accomplish 
 Place a FASTA formatted file in the same directory as the script.  To find the number of ddRAD fragments you would expect in the size range of 275 to 325bp in length for a file named genomefile.fasta using the PstI and MspI enzymes, you would use the following command:
 
 ```
-./ddradsim.pl -1 PstI -2 MspI -f genomefile.fasta -s 300 -e 25
+./ddrad.pl -1 PstI -2 MspI -f genomefile.fasta -s 300 -e 25
 ```
 
 The order of input for restriction enzymes should not influence results (I could have swapped positions of PstI and MspI).  If your genome file is in a directory other than the location of the script, you will have to give its path.  
@@ -28,7 +28,7 @@ The order of input for restriction enzymes should not influence results (I could
 To see a list of all commands for the program, execute the script without any command line arguments:
 
 ```
-./ddradsim.pl
+./ddrad.pl
 ```
 
 ## Supported Restriction Enzymes:
