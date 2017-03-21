@@ -1,5 +1,5 @@
 # ddrad_tools
-A collection of tools designed for simulating .
+A collection of tools designed for simulating the restriction digest of a genome using two restriction enzymes.
 
 These scripts are designed to simulate the digest of an organism's genome by two restriction enzymes according to the double-digest restriction site associated DNA (ddRAD) sequencing method (Peterson et al. 2012: http://dx.doi.org/10.1371/journal.pone.0037135).
 
