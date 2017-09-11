@@ -1,6 +1,11 @@
 # ddrad_tools
 A collection of tools designed for simulating the restriction digest of a genome using two restriction enzymes.
 
+This is my own implementation of the algorithm described in:
+Chafin TK, BT Martin, SM Mussmann, MR Douglas, ME Douglas (2017) *FRAGMATIC: in silico locus prediction and its utility in optimizing ddRADseq projects*. pp. 1-4
+
+The paper describing the algorithm is available at https://doi.org/10.1007/s12686-017-0814-1
+
 These scripts are designed to simulate the digest of an organism's genome by two restriction enzymes according to the double-digest restriction site associated DNA (ddRAD) sequencing method (Peterson et al. 2012: http://dx.doi.org/10.1371/journal.pone.0037135).
 
 ## Installation:
