@@ -10,7 +10,7 @@ These scripts are designed to simulate the digest of an organism's genome by two
 
 ## Installation:
 
-These scripts are intended to be run on Unix based operating systems, such as the various Linux distributions and Mac OS X.  Windows is not supported at this time.  To get started, copy the desired script (high memory or low memory version) into a folder.  
+These scripts are intended to be run on Unix based operating systems, such as the various Linux distributions and Mac OS X.  Windows is not supported at this time.  To get started, copy the desired script (high memory or low memory version) into a folder.  The high memory version reads an entire genome into memory at once, which may overwhelm some laptops and desktop computers, but it may run marginally faster on systems that have adequate memory.
 
 These scripts also depend upon Gnuplot (http://www.gnuplot.info/) and the perl module Chart::Gnuplot (http://search.cpan.org/dist/Chart-Gnuplot/lib/Chart/Gnuplot.pm).  If it is not already installed, you should first install Gnuplot.  This can be done through your Linux distribution's package manager.  On Ubuntu, the following command should work:
 ```
@@ -30,7 +30,7 @@ The easiest way to install perl modules on other systems is through CPAN.  Some 
 Place a FASTA formatted file in the same directory as the script.  To find the number of ddRAD fragments you would expect in the size range of 275 to 325bp in length for a file named genomefile.fasta using the PstI and MspI enzymes, you would use the following command:
 
 ```
-./ddrad.pl -1 PstI -2 MspI -f genomefile.fasta -s 300 -e 25
+./ddrad_lowmem.pl -1 PstI -2 MspI -f genomefile.fasta -s 300 -e 25
 ```
 
 The order of input for restriction enzymes should not influence results (I could have swapped positions of PstI and MspI).  If your genome file is in a directory other than the location of the script, you will have to give its path.  
