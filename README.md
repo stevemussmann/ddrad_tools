@@ -18,7 +18,12 @@ sudo apt-get install gnuplot
 ```
 Other versions Linux distributions may use a different package manager, so your command may vary slightly.  Installation of Gnuplot can also be performed in this way if you have installed a 3rd-party package manager such as HomeBrew (http://brew.sh/) or MacPorts (https://www.macports.org/).  
 
-Finally, install the Chart::Gnuplot perl module.  The easiest way to accomplish this is through CPAN.  Some information on installing packages through CPAN is available here: http://www.cpan.org/modules/INSTALL.html
+Finally, install the Chart::Gnuplot perl module.  Under Ubuntu, you may be able to execute:
+```
+sudo apt-get install libchart-gnuplot-perl
+```
+
+The easiest way to install perl modules on other systems is through CPAN.  Some information on installing packages through CPAN is available here: http://www.cpan.org/modules/INSTALL.html
 
 ## Running the script:
 
@@ -33,7 +38,7 @@ The order of input for restriction enzymes should not influence results (I could
 To see a list of all commands for the program, execute the script without any command line arguments:
 
 ```
-./ddrad.pl
+./ddrad_lowmem.pl
 ```
 
 ## Supported Restriction Enzymes:
