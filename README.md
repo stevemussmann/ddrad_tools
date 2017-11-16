@@ -6,6 +6,8 @@ Chafin TK, BT Martin, SM Mussmann, MR Douglas, ME Douglas (2017) *FRAGMATIC: in 
 
 The paper describing the algorithm is available at https://doi.org/10.1007/s12686-017-0814-1
 
+If you would rather use Tyler's interpretation, it can be found here: https://github.com/tkchafin/fragmatic
+
 These scripts are designed to simulate the digest of an organism's genome by two restriction enzymes according to the double-digest restriction site associated DNA (ddRAD) sequencing method (Peterson et al. 2012: http://dx.doi.org/10.1371/journal.pone.0037135).
 
 ## Installation:
