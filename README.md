@@ -1,5 +1,5 @@
-# ddrad_tools
-A collection of tools designed for simulating the restriction digest of a genome using two restriction enzymes.
+# FRAGMATIC
+A tool designed for simulating the restriction digest of a genome using two restriction enzymes.
 
 This is my own implementation of the algorithm described in:
 Chafin TK, BT Martin, SM Mussmann, MR Douglas, ME Douglas (2018) *FRAGMATIC: in silico locus prediction and its utility in optimizing ddRADseq projects*. Conservation Genetics Resources 10(3):325-328.
