@@ -301,12 +301,13 @@ sub fastaparse{
 	  undef( $seq );
 	}
       }else{
-	$seq .= $line; # if the line does not start with > then append the sequence to the $seq string
+	$seq .= uc($line); # if the line does not start with > then append the sequence to the $seq string
       }
     }
     
     # take care of the last sequence by pushing it to @seqs array
     if( $seq ){
+      $seq = uc($seq);
       &cutseq(\$seq, \$genomelength, \$gc, \$n, $min, $max );
       undef( $seq );
     }
