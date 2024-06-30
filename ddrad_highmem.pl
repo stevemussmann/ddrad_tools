@@ -322,19 +322,19 @@ sub fastaparse{
 	push( @head, $line );
 	# push the previous sequence off to the @seqs array
 	if( $seq ){
-	  push( @seqs, $seq );
+	  push( @seqs, uc($seq) );
 	  # undefine the $seq string
 	  undef( $seq );
 	}
 	# if the line does not start with > then append the sequence to the $seq string
       }else{
-	$seq .= $line;
+	$seq .= uc($line);
       }
     }
     
     # take care of the last sequence by pushing it to @seqs array
     if( $seq ){
-      push( @seqs, $seq );
+      push( @seqs, uc($seq) );
       undef( $seq );
     }
     
